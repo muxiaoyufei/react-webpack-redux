@@ -3,10 +3,10 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-	mode: 'production',
+	mode: 'development',
 	devServer:{
 		historyApiFallback: true,
-		contentBase:path.resolve(__dirname,'dist'),
+		contentBase:path.join(__dirname,'dist'),
 		hot: true,
 		port: 8000,
 		publicPath:'/'

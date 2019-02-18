@@ -1,6 +1,9 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDom from 'react-dom';
+import Display from './components/Display.js';
+import Test from './test.js';
+import getRouter from './router/router';
 
 ReactDom.render(
-	<div>React使用成功</div>,document.getElementById('root')
+	getRouter(),document.getElementById('root')
 )
