@@ -28,7 +28,7 @@ const mapDispatchToProps = (dispatch) =>{
 		},
 		decrement: () => {
 			dispatch(decrement())
-		},
+		}, 
 		reset: () =>{
 			dispatch(reset())
 		}

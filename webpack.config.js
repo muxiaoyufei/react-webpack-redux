@@ -9,7 +9,10 @@ const config = {
 		contentBase:path.join(__dirname,'dist'),
 		hot: true,
 		port: 8000,
-		publicPath:'/'
+		publicPath:'/',
+		proxy:{
+			"^/api": "http://localhost:3000"
+		}
 	},
 	entry: path.join(__dirname, 'src/index.js'),
 	output:{
